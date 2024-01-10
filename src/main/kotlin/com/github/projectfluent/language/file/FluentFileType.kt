@@ -1,14 +1,14 @@
 package com.github.projectfluent.language.file
 
-import com.github.projectfluent.FluentBundle
-import com.github.projectfluent.FluentLanguage
+import g8.intellij.G8Bundle
+import g8.intellij.G8Language
 import com.intellij.openapi.fileTypes.LanguageFileType
 import javax.swing.Icon
 
-class FluentFileType private constructor() : LanguageFileType(FluentLanguage) {
-    override fun getName(): String = FluentLanguage.id
+class FluentFileType private constructor() : LanguageFileType(G8Language) {
+    override fun getName(): String = G8Language.id
 
-    override fun getDescription(): String = FluentBundle.message("filetype.description")
+    override fun getDescription(): String = G8Bundle.message("filetype.description")
 
     override fun getDefaultExtension(): String = "ftl;"
 

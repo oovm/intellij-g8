@@ -1,13 +1,13 @@
 package com.github.projectfluent.ide.matcher
 
-import com.github.projectfluent.FluentLanguage
+import g8.intellij.G8Language
 import com.github.projectfluent.language.file.FluentFileType
 
 import com.intellij.codeInsight.highlighting.PairedBraceMatcherAdapter
 import com.intellij.openapi.editor.highlighter.HighlighterIterator
 import com.intellij.openapi.fileTypes.FileType
 
-class FluentBraceMatcher : PairedBraceMatcherAdapter(BaseBraceMatcher(), FluentLanguage) {
+class FluentBraceMatcher : PairedBraceMatcherAdapter(BaseBraceMatcher(), G8Language) {
     override fun isLBraceToken(iterator: HighlighterIterator, fileText: CharSequence, fileType: FileType): Boolean {
         return isBrace(iterator, fileText, fileType, true)
     }

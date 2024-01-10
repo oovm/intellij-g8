@@ -1,12 +1,12 @@
 package com.github.projectfluent.ide.codeStyle
 
-import com.github.projectfluent.FluentLanguage
+import g8.intellij.G8Language
 import com.intellij.application.options.SmartIndentOptionsEditor
 import com.intellij.application.options.codeStyle.OtherFileTypesCodeStyleConfigurable
 import com.intellij.psi.codeStyle.*
 
 class FluentLanguageCodeStyleSettingsProvider : LanguageCodeStyleSettingsProvider() {
-    override fun getLanguage() = FluentLanguage
+    override fun getLanguage() = G8Language
 
     override fun getIndentOptionsEditor() = SmartIndentOptionsEditor()
 

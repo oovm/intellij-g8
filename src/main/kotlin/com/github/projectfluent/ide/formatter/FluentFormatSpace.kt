@@ -1,6 +1,6 @@
 package com.github.projectfluent.ide.formatter
 
-import com.github.projectfluent.FluentLanguage
+import g8.intellij.G8Language
 import com.github.projectfluent.language.psi.FluentTypes.*
 import com.intellij.formatting.SpacingBuilder
 import com.intellij.psi.codeStyle.CodeStyleSettings
@@ -13,7 +13,7 @@ data class FluentFormatSpace(
 ) {
     companion object {
         fun create(settings: CodeStyleSettings): FluentFormatSpace {
-            val commonSettings = settings.getCommonSettings(FluentLanguage)
+            val commonSettings = settings.getCommonSettings(G8Language)
             return FluentFormatSpace(commonSettings, createSpacingBuilder(commonSettings))
         }
 

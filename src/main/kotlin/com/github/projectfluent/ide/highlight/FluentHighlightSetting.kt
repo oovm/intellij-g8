@@ -1,6 +1,6 @@
 package com.github.projectfluent.ide.highlight
 
-import com.github.projectfluent.FluentBundle
+import g8.intellij.G8Bundle
 import com.github.projectfluent.language.file.FluentIcons
 import com.intellij.openapi.options.colors.ColorDescriptor
 import com.intellij.openapi.options.colors.ColorSettingsPage
@@ -17,7 +17,7 @@ class FluentHighlightSetting : ColorSettingsPage {
 
     override fun getColorDescriptors(): Array<ColorDescriptor> = ColorDescriptor.EMPTY_ARRAY
 
-    override fun getDisplayName() = FluentBundle.message("filetype.name")
+    override fun getDisplayName() = G8Bundle.message("filetype.name")
 
     override fun getIcon() = FluentIcons.FILE
 

@@ -1,12 +1,12 @@
-package com.github.projectfluent
+package g8.intellij
 
-import com.github.projectfluent.FluentLanguage.Bundle
+import g8.intellij.G8Language.Bundle
 import com.intellij.DynamicBundle
 import org.jetbrains.annotations.PropertyKey
 import java.util.function.Supplier
 
 
-object FluentBundle : DynamicBundle(Bundle) {
+object G8Bundle : DynamicBundle(Bundle) {
 
     @Suppress("SpreadOperator")
     @JvmStatic

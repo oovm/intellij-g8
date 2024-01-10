@@ -1,6 +1,6 @@
 package com.github.projectfluent.language.psi
 
-import com.github.projectfluent.FluentLanguage
+import g8.intellij.G8Language
 import com.intellij.psi.tree.IElementType
 
-class FluentElementType(debugName: String) : IElementType(debugName, FluentLanguage)
+class FluentElementType(debugName: String) : IElementType(debugName, G8Language)
